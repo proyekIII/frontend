@@ -1,0 +1,96 @@
+/* transactions.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5E1; /* Soft Cream */
+    margin: 0;
+    padding: 0;
+    color: #36454F; /* Dark Charcoal */
+}
+
+.transactions-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #F7C6C7; /* Blush Pink */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #36454F;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #36454F;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #FFD700; /* Gold */
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    width: 75%;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #36454F;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #FFD700; /* Gold */
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #FFD1DC; /* Light Blush */
+}

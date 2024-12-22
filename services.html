@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Services - POS Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <div class="services-container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kasir.html">Manage Cashiers</a></li>
+                <li><a href="transactions.html">View Transactions</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html" class="active">Salon Services</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Salon Services</h1>
+            <p>Manage available salon services.</p>
+
+            <!-- Form Add Service -->
+            <form id="add-service-form">
+                <input type="text" id="service-name" placeholder="Enter service name" required>
+                <input type="number" id="service-price" placeholder="Enter price" required>
+                <button type="submit">Add Service</button>
+            </form>
+
+            <!-- Table Services -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="services-table">
+                    <!-- Data will be dynamically inserted -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/services.js"></script>
+</body>
+</html>

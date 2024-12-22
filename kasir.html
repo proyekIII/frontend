@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Cashiers - POS Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/kasir.css">
+</head>
+<body>
+    <div class="kasir-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kasir.html">Manage Cashiers</a></li>
+                <li><a href="transactions.html">View Transactions</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Salon Services</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+            
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Manage Cashiers</h1>
+            
+            <button class="add-cashier-button" onclick="location.href='add_cashier.html'">Add New Cashier</button>
+
+            <!-- Daftar Kasir -->
+            <div class="cashier-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cashier ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="edit-button" onclick="location.href='edit_cashier.html?id=001'">Edit</button>
+                                <button class="delete-button" onclick="deleteCashier(1)">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Jane Smith</td>
+                            <td>janesmith@gmail.com</td>
+                            <td>Inactive</td>
+                            <td>
+                                <button class="edit-button" onclick="location.href='edit_cashier.html?id=002'">Edit</button>
+                                <button class="delete-button" onclick="deleteCashier(2)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/kasir.js"></script>
+</body>
+</html>

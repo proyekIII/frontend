@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - POS Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/categories.css">
+</head>
+<body>
+    <div class="categories-container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kasir.html">Manage Cashiers</a></li>
+                <li><a href="transactions.html">View Transactions</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="services.html">Salon Services</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Categories</h1>
+            <p>Manage service categories for your salon.</p>
+
+            <!-- Form Add Category -->
+            <form id="add-category-form">
+                <input type="text" id="category-name" placeholder="Enter category name" required>
+                <button type="submit">Add Category</button>
+            </form>
+
+            <!-- Table Categories -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Category Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="categories-table">
+                    <!-- Data will be dynamically inserted -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/categories.js"></script>
+</body>
+</html>

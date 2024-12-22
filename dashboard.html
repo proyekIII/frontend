@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - POS Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kasir.html">Manage Cashiers</a></li>
+                <li><a href="transactions.html">View Transactions</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Salon Services</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+            
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Welcome to the Admin Dashboard</h1>
+            
+            <!-- Manage Transactions -->
+            <div class="transaction-section">
+                <h2>Manage Transactions</h2>
+                <button class="transaction-button" onclick="location.href='add_transaction.html'">Add New Transaction</button>
+            </div>
+
+            <!-- Transaction History -->
+            <div class="transaction-history">
+                <h2>Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example data, this would normally be dynamic -->
+                        <tr>
+                            <td>#001</td>
+                            <td>2024-12-21</td>
+                            <td>John Doe</td>
+                            <td>$150</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>2024-12-20</td>
+                            <td>Jane Smith</td>
+                            <td>$200</td>
+                            <td>Completed</td>
+                        </tr>
+                        <!-- More transaction rows would be dynamically inserted -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
